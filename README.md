@@ -40,6 +40,14 @@ This repository contains a semantic search application that leverages the FinBER
     **The script will:**
       - check if the index exists and, if not, create it with the required mapping.
       - It then processes each description, computes its FinBERT embedding, and bulk indexes the documents.
+  
+3. **Perform Semantic Search:** Run the search.py script to perform a semantic search using keywords from sample_keyword_data.xlsx.
+
+     **The script:**
+      - generates embeddings for each query keyword, performs a semantic search against the indexed documents.
+      -  saves the best match along with its similarity score into a new Excel file (with a modified name).
+  
+4. **(Optional) Delete Existing Elasticsearch Index:** If you wish to clear the current index before re-indexing, run the delete_index.py script.
       
    
 
