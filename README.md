@@ -65,6 +65,6 @@ If Elasticsearch warns about disk usage (e.g., high disk watermark), ensure you 
 ## Acknowledgements
 
 1. [FinBERT](https://github.com/ProsusAI/finbert) by ProsusAI.
-2. Elasticsearch
-3. Transformers
+2. [Elasticsearch](https://www.elastic.co/elasticsearch)
+3. [Transformers](https://github.com/huggingface/transformers)
 
