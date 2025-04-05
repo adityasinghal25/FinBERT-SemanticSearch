@@ -29,8 +29,7 @@ This repository contains a semantic search application that leverages the FinBER
 
 ## Usage
 
-1. **Generate Sample Excel Files:**
-                                    Run the generates_excel.py script to create sample Excel files for indexing and searching.
+1. **Generate Sample Excel Files:**Run the generates_excel.py script to create sample Excel files for indexing and searching.
 
    **This will create:**
       - sample_index_data.xlsx with a sheet named IndexData containing sample descriptions.
@@ -62,5 +61,10 @@ If you encounter connection timeouts, consider increasing the timeout settings i
 3. Disk Space Warnings:
 If Elasticsearch warns about disk usage (e.g., high disk watermark), ensure you have sufficient free space or adjust the watermark settings in elasticsearch.yml for development purposes.
       
-   
+
+## Acknowledgements
+
+1. FinBERT by ProsusAI.
+2. Elasticsearch
+3. Transformers
 
