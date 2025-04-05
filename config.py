@@ -1,0 +1,6 @@
+INDEX_NAME = "semantic_index"
+FILE_PATH = "sample_index_data.xlsx"
+SHEET_NAME = "IndexData"
+MODEL_NAME = "ProsusAI/finbert"
+FEATURES_FILE_PATH = "sample_keyword_data.xlsx"
+FEATURES_SHEET_NAME = "Keywords"
