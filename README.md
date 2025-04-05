@@ -52,13 +52,13 @@ This repository contains a semantic search application that leverages the FinBER
 
 ## Troubleshooting
 
-- Elasticsearch Connection Issues:
+1. Elasticsearch Connection Issues:
 Make sure Elasticsearch is running at http://localhost:9200. You can adjust the host and port in the scripts if necessary.
 
-- Timeouts or Performance Issues:
+2.Timeouts or Performance Issues:
 If you encounter connection timeouts, consider increasing the timeout settings in the Elasticsearch client initialization in your scripts.
 
-- Disk Space Warnings:
+3. Disk Space Warnings:
 If Elasticsearch warns about disk usage (e.g., high disk watermark), ensure you have sufficient free space or adjust the watermark settings in elasticsearch.yml for development purposes.
       
    
