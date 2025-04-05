@@ -29,25 +29,26 @@ This repository contains a semantic search application that leverages the FinBER
 
 ## Usage
 
-1. **Generate Sample Excel Files:** Run the generates_excel.py script to create sample Excel files for indexing and searching.
+1. **Generate Sample Excel Files:**
+                                    Run the generates_excel.py script to create sample Excel files for indexing and searching.
 
    **This will create:**
       - sample_index_data.xlsx with a sheet named IndexData containing sample descriptions.
       - sample_keyword_data.xlsx with a sheet named Keywords containing sample query keywords
 
-2. **Index Data into Elasticsearch:** Run the indexing.py script to index data from sample_index_data.xlsx into Elasticsearch.
+3. **Index Data into Elasticsearch:** Run the indexing.py script to index data from sample_index_data.xlsx into Elasticsearch.
 
     **The script:**
       - checks if the index exists and, if not, create it with the required mapping.
       - processes each description, computes its FinBERT embedding, and bulk indexes the documents.
   
-3. **Perform Semantic Search:** Run the search.py script to perform a semantic search using keywords from sample_keyword_data.xlsx.
+4. **Perform Semantic Search:** Run the search.py script to perform a semantic search using keywords from sample_keyword_data.xlsx.
 
      **The script:**
       - generates embeddings for each query keyword, performs a semantic search against the indexed documents.
       -  saves the best match along with its similarity score into a new Excel file (with a modified name).
   
-4. **(Optional) Delete Existing Elasticsearch Index:** If you wish to clear the current index before re-indexing, run the delete_index.py script.
+5. **(Optional) Delete Existing Elasticsearch Index:** If you wish to clear the current index before re-indexing, run the delete_index.py script.
 
 
 ## Troubleshooting
