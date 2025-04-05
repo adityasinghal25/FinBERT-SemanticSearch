@@ -29,7 +29,7 @@ This repository contains a semantic search application that leverages the FinBER
 
 ## Usage
 
-1. **Generate Sample Excel Files:**Run the generates_excel.py script to create sample Excel files for indexing and searching.
+1. **Generate Sample Excel Files:** Run the generates_excel.py script to create sample Excel files for indexing and searching.
 
    **This will create:**
       - sample_index_data.xlsx with a sheet named IndexData containing sample descriptions.
