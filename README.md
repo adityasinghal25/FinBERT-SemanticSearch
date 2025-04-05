@@ -21,3 +21,19 @@ This repository contains a semantic search application that leverages the FinBER
    ```bash
    git clone https://github.com/yourusername/FinBERT-SemanticSearch.git
    cd FinBERT-SemanticSearch
+
+ 2. **Install Required Python Libraries:**
+
+    ```bash
+      pip install pandas torch transformers elasticsearch openpyxl
+
+## Usage
+
+1. **Generate Sample Excel Files: Run the generates_excel.py script to create sample Excel files for indexing and searching.**
+
+   **This will create:**
+      - sample_index_data.xlsx with a sheet named IndexData containing sample descriptions.
+      - sample_keyword_data.xlsx with a sheet named Keywords containing sample query keywords
+
+   
+
