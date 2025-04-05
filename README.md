@@ -25,7 +25,7 @@ This repository contains a semantic search application that leverages the FinBER
  2. **Install Required Python Libraries:**
 
     ```bash
-      pip install pandas torch transformers elasticsearch openpyxl
+    pip install pandas torch transformers elasticsearch openpyxl
 
 ## Usage
 
@@ -35,5 +35,11 @@ This repository contains a semantic search application that leverages the FinBER
       - sample_index_data.xlsx with a sheet named IndexData containing sample descriptions.
       - sample_keyword_data.xlsx with a sheet named Keywords containing sample query keywords
 
+2. **Index Data into Elasticsearch: Run the indexing.py script to index data from sample_index_data.xlsx into Elasticsearch.**
+
+    **The script will:**
+      - check if the index exists and, if not, create it with the required mapping.
+      - It then processes each description, computes its FinBERT embedding, and bulk indexes the documents.
+      
    
 
