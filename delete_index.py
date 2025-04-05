@@ -1,3 +1,4 @@
+#Optional File
 from elasticsearch import Elasticsearch
 from config import INDEX_NAME
  
