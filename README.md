@@ -29,13 +29,13 @@ This repository contains a semantic search application that leverages the FinBER
 
 ## Usage
 
-1. **Generate Sample Excel Files: Run the generates_excel.py script to create sample Excel files for indexing and searching.**
+1. **Generate Sample Excel Files:** Run the generates_excel.py script to create sample Excel files for indexing and searching.
 
    **This will create:**
       - sample_index_data.xlsx with a sheet named IndexData containing sample descriptions.
       - sample_keyword_data.xlsx with a sheet named Keywords containing sample query keywords
 
-2. **Index Data into Elasticsearch: Run the indexing.py script to index data from sample_index_data.xlsx into Elasticsearch.**
+2. **Index Data into Elasticsearch:** Run the indexing.py script to index data from sample_index_data.xlsx into Elasticsearch.
 
     **The script will:**
       - check if the index exists and, if not, create it with the required mapping.
