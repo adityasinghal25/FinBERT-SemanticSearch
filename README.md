@@ -37,9 +37,9 @@ This repository contains a semantic search application that leverages the FinBER
 
 2. **Index Data into Elasticsearch:** Run the indexing.py script to index data from sample_index_data.xlsx into Elasticsearch.
 
-    **The script will:**
-      - check if the index exists and, if not, create it with the required mapping.
-      - It then processes each description, computes its FinBERT embedding, and bulk indexes the documents.
+    **The script:**
+      - checks if the index exists and, if not, create it with the required mapping.
+      - processes each description, computes its FinBERT embedding, and bulk indexes the documents.
   
 3. **Perform Semantic Search:** Run the search.py script to perform a semantic search using keywords from sample_keyword_data.xlsx.
 
@@ -48,6 +48,18 @@ This repository contains a semantic search application that leverages the FinBER
       -  saves the best match along with its similarity score into a new Excel file (with a modified name).
   
 4. **(Optional) Delete Existing Elasticsearch Index:** If you wish to clear the current index before re-indexing, run the delete_index.py script.
+
+
+## Troubleshooting
+
+- Elasticsearch Connection Issues:
+Make sure Elasticsearch is running at http://localhost:9200. You can adjust the host and port in the scripts if necessary.
+
+- Timeouts or Performance Issues:
+If you encounter connection timeouts, consider increasing the timeout settings in the Elasticsearch client initialization in your scripts.
+
+- Disk Space Warnings:
+If Elasticsearch warns about disk usage (e.g., high disk watermark), ensure you have sufficient free space or adjust the watermark settings in elasticsearch.yml for development purposes.
       
    
 
