@@ -8,9 +8,6 @@ from config import INDEX_NAME, FILE_PATH, SHEET_NAME, MODEL_NAME
 # Elasticsearch setup
 es = Elasticsearch(hosts=["http://localhost:9200"])
 
-# Use a new index for semantic search
-INDEX_NAME = "semantic_index"
-
 # Check if index exists; if not, create it
 if not es.indices.exists(index=INDEX_NAME):
     mapping = {
